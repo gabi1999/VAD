@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.css' rel='stylesheet' />
+<script src="//d3js.org/d3.v4.js"></script>
+<script src="https://unpkg.com/maplibre-gl@2.1.9/dist/maplibre-gl.js"></script>
+<link href="https://unpkg.com/maplibre-gl@2.1.9/dist/maplibre-gl.css" rel="stylesheet" />
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js"></script>
+
+<link rel="stylesheet" href="range-slider-master/css/rSlider.min.css">
+<script src="range-slider-master/js/rSlider.min.js"></script>
+
+<link rel="stylesheet" href="Css/Airbnb.css">
+<link rel="stylesheet" href="Css/Buttons.css">
+
+<header >
+    <b id="title" >Airbnbs in Paris</b>
+
+    <div class="container">
+
+        <a href="http://localhost:63342/Projecto/Website/index.html" class="btn effect01" ><span>Inicio</span></a>
+        <a href="http://localhost:63342/Projecto/Website/Bairros.html" class="btn effect01" ><span>Bairros</span></a>
+        <a href="http://localhost:63342/Projecto/Website/Airbnb.html" class="btn effect01" ><span>Airbnbs</span></a>
+        <a href="http://localhost:63342/Projecto/Website/Listings.html" class="btn effect01" ><span>Listings</span></a>
+    </div>
+
+</header>
+
+<body>
+
+<div class="row-container" style="width:100%">
+    <div class="row-child" id="map"></div>
+    <div id="Legenda_P_Quartos" class="legend">
+        <h4 id= >Preços Airbnbs</h4>
+        <div id="l1"><span   style="background-color: #2166AC00; opacity: 1"></span></div>
+        <div id="l2"><span   style="background-color: #d7e1ee; opacity: 1"></span></div>
+        <div id="l3"><span   style="background-color: #949698; opacity: 1"></span></div>
+        <div id="l4"><span   style="background-color: #727171; opacity: 1"></span></div>
+        <div id="l5"><span   style="background-color: #c86558; opacity: 1"></span></div>
+        <div id="l6"><span   style="background-color: #991f17; opacity: 1"></span></div>
+    </div>
+
+    <div class="row-child" id="row_direita">
+
+        <div id="filtros">
+            <b id="title_filtros">Filtros</b>
+
+            <div id="filtros_Poi_container">
+                <li>Pontos de Interesse
+                    <input type="checkbox" id="check_poi" onclick="checkbox_poi()">
+                </li>
+                <li>Airbnbs com vista para Torre Eiffel
+                    <input type="checkbox" id="check_eiffel" onclick="checkbox_eiffel()">
+                </li>
+
+            </div>
+
+            <div id="filtros_slider_container">
+                <div id="filtros_slider">
+                    <input type="text" id="sampleSlider" />
+                </div>
+
+                <button id="check_animation" onclick="check_animation()">Animação</button>
+
+            </div>
+
+
+        </div>
+
+
+
+        </div>
+
+
+    </div>
+    <script type="text/javascript" src="JS/Airbnb.js"></script>
+</div>
+
+
+
+
+</body>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js"></script>
+
+<link rel="stylesheet" href="Css/Bairros.css">
+<link rel="stylesheet" href="Css/Buttons.css">
+
+<header >
+    <b id="title" >Airbnbs in Paris</b>
+
+    <div class="container">
+
+        <a href="http://localhost:63342/Projecto/Website/index.html" class="btn effect01" ><span>Inicio</span></a>
+        <a href="http://localhost:63342/Projecto/Website/Bairros.html" class="btn effect01" ><span>Bairros</span></a>
+        <a href="http://localhost:63342/Projecto/Website/Airbnb.html" class="btn effect01" ><span>Airbnbs</span></a>
+        <a href="http://localhost:63342/Projecto/Website/Listings.html" class="btn effect01" ><span>Listings</span></a>
+    </div>
+
+</header>
+
+<body>
+
+<div class="row-container" style="width:100%">
+    <!--MAPA-->
+    <div class="row-child" id="map"></div>
+    <div id="Legenda_preco" class="legend">
+        <h4>Preço Médio</h4>
+        <div><span style="background-color: #991f17; opacity: 0.75"></span> > 155 €</div>
+        <div><span style="background-color: #c86558; opacity: 0.75"></span>125 - 155 €</div>
+        <div><span style="background-color: #a4a2a8; opacity: 0.75"></span>95 - 120 €</div>
+        <div><span style="background-color: #bfcbdb; opacity: 0.75"></span>70 - 95 €</div>
+        <div><span style="background-color: #d7e1ee; opacity: 0.75" ></span> < 70 €</div>
+    </div>
+
+    <div id="Legenda_N_Quartos" class="legend" style="display: none">
+        <h4>Nº Airbnbs</h4>
+        <div><span style="background-color: #991f17; opacity: 0.75"></span> > 3400</div>
+        <div><span style="background-color: #c86558; opacity: 0.75"></span>2800 - 3400</div>
+        <div><span style="background-color: #a4a2a8; opacity: 0.75"></span>2200 - 2800</div>
+        <div><span style="background-color: #bfcbdb; opacity: 0.75"></span>1600 - 2200</div>
+        <div><span style="background-color: #d7e1ee; opacity: 0.75" ></span> < 1600 </div>
+    </div>
+
+    <div id="Legenda_P_Quartos" class="legend" style="display: none">
+        <h4>% Airbnbs</h4>
+        <div><span style="background-color: #991f17; opacity: 0.75"></span> > 6.85%</div>
+        <div><span style="background-color: #c86558; opacity: 0.75"></span>5.6% - 6.85%</div>
+        <div><span style="background-color: #a4a2a8; opacity: 0.75"></span>4.35% - 5.6%</div>
+        <div><span style="background-color: #bfcbdb; opacity: 0.75"></span>3.1% - 4.35%</div>
+        <div><span style="background-color: #d7e1ee; opacity: 0.75" ></span> < 3.1%</div>
+    </div>
+
+    <!-- Grafico-->
+    <div class="row-child" id="row_direita">
+        <!-- Add 2 buttons -->
+        <button onclick="update('preco_medio'); Buttton_Preco_Medio()">Preço Médio</button>
+        <button onclick="update('N_quartos');   Buttton_N_Airbnbs()">Nº airbnbs</button>
+        <button onclick="update('Per_quartos'); Buttton_P_Airbnbs()">Percentagem de quartos</button>
+
+        <!-- Create a div where the graph will take place -->
+        <div id="my_dataviz"></div>
+
+
+    </div>
+
+    <div >
+
+
+    </div>
+
+
+</div>
+
+
+<script type="text/javascript" src="JS/Bairros.js"></script>
+<script type="text/javascript" src="JS/Bairros_plot.js"></script>
+
+</body>

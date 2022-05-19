@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<meta charset="utf-8" xmlns="http://www.w3.org/1999/html">
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.css' rel='stylesheet' />
+<script src="//d3js.org/d3.v4.js"></script>
+<script src="https://unpkg.com/maplibre-gl@2.1.9/dist/maplibre-gl.js"></script>
+<link href="https://unpkg.com/maplibre-gl@2.1.9/dist/maplibre-gl.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="Css/Main.css">
+<link rel="stylesheet" href="Css/Buttons.css">
+
+
+<header >
+    <b id="title" >Airbnbs in Paris</b>
+
+    <div class="container">
+
+        <a href="http://localhost:63342/Projecto/Website/index.html" class="btn effect01" ><span>Inicio</span></a>
+        <a href="http://localhost:63342/Projecto/Website/Bairros.html" class="btn effect01" ><span>Bairros</span></a>
+        <a href="http://localhost:63342/Projecto/Website/Airbnb.html" class="btn effect01" ><span>Airbnbs</span></a>
+        <a href="http://localhost:63342/Projecto/Website/Listings.html" class="btn effect01" ><span>Listings</span></a>
+    </div>
+
+</header>
+
+<body>
+
+    <div class="row-container" style="width:100%">
+        <div class="row-child" id="map"></div>
+
+        <div class="row-child" id="row_direita">
+
+            <div id="filtros">
+                <b id="title_filtros">Filtros</b>
+
+                <div id="filtros_airbnbs_container">
+                    <li>Airbnbs
+                        <input type="checkbox" id="check_airbnb" onclick="checkbox_airbnbs()">
+                    </li>
+
+                </div>
+
+                <div id="filtros_Poi_container">
+                    <li>Pontos de Interesse
+                        <input type="checkbox" id="check_poi" onclick="checkbox_poi()">
+                    </li>
+
+                </div>
+            </div>
+
+            <div id="descricao_container">
+                <b id="descricao_title">Descrição</b>
+
+                <div id="descricao_texto_container">
+                    <b id="descricao_texto">É possivel os airbnbs na cidade de Paris, França. <br>
+                        O dataset usado para esta análise pode ser encontrado em <a href="http://insideairbnb.com/paris">http://insideairbnb.com/paris</a>.<br>
+                        É possivel ver pela interação com os filtros em cima,
+                            onde se encontram os airbnbs, bem como, os principais pontos de interesse da cidade.<br>
+                        Algumas das principais informações que tentámos perceber foram:
+                        <li>O <a href="http://localhost:63342/Projecto/Website/Bairros.html">preço médio</a> por zona</li>
+                        <li>A <a href="http://localhost:63342/Projecto/Website/Listings.html">oscilação do preço</a> dos airbnbs ao longo do tempo </li>
+                        <li>A <a href="http://localhost:63342/Projecto/Website/Airbnb.html"> variação do preço</a> dos airbnbs com vista ou não para a Torre Eiffel </li>
+                    </b>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="JS/Map.js"></script>
+
+</body>
