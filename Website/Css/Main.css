@@ -1,0 +1,75 @@
+header {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+body {
+    margin-left: 10px;
+}
+
+#title{
+    font-size: 32px;
+}
+
+.row-container{
+    padding: 20px;
+}
+
+.row-child{
+    float: left;
+}
+
+#map{
+    width: 750px;
+    height: 430px;
+    margin-left: 40px;
+}
+
+#row_direita{
+    height: 430px;
+    width: 500px;
+    margin-left: 50px;
+   /* border: 3px solid red;*/
+}
+#filtros{
+    height: 150px;
+    width: 500px;
+    border: 3px solid black;
+}
+
+#title_filtros{
+    text-align: left;
+    margin-left: 30px;
+    font-size: 20px;
+ }
+
+#filtros_airbnbs_container{
+    margin-left: 40px;
+    margin-top: 30px;
+
+}
+
+#filtros_Poi_container{
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+#descricao_container{
+    margin-top: 10px;
+}
+
+#descricao_texto_container{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+#descricao_title{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+#descricao_texto{
+    font-weight: normal;
+}

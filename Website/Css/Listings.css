@@ -1,0 +1,23 @@
+header {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+body {
+    margin-left: 10px;
+}
+
+#title{
+    font-size: 32px;
+}
+
+.row-container{
+    padding: 20px;
+}
+
+.row-child{
+    float: left;
+}
+
+
