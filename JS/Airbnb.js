@@ -64,9 +64,9 @@ async function check_animation(){
 }
 
 
-var paris = "http://localhost:63342/Projecto/Website/JSON/Paris.geojson"
-var airbnbs_file = "http://localhost:63342/Projecto/Website/JSON/airbnbs.geojson"
-var poi_file = "http://localhost:63342/Projecto/Website/JSON/poi.geojson"
+var paris = "https://student.dei.uc.pt/~gabriel/JSON/Paris.geojson"
+var airbnbs_file = "https://student.dei.uc.pt/~gabriel/Website/JSON/airbnbs.geojson"
+var poi_file = "https://student.dei.uc.pt/~gabriel/JSON/poi.geojson"
 var show_eiffel = false;
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoic3RhbWVuIiwiYSI6IlpkZEtuS1EifQ.jiH_c9ShtBwtqH9RdG40mw';

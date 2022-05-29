@@ -67,7 +67,7 @@ var map = new mapboxgl.Map({
     zoom: 11.02
 });
 
-var paris = "http://localhost:63342/Projecto/Website/JSON/neighbourhoods.geojson"
+var paris = "https://student.dei.uc.pt/~gabriel/JSON/neighbourhoods.geojson"
 
 let hoveredStateId = null;
 const popup = new mapboxgl.Popup({

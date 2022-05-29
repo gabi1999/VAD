@@ -1,4 +1,4 @@
-var file = "http://localhost:63342/Projecto/Website/JSON/neighbourhoods.csv"
+var file = "https://student.dei.uc.pt/~gabriel/JSON/neighbourhoods.csv"
 
 // set the dimensions and margins of the graph
 var margin = {top: 30, right: 30, bottom: 90, left: 60},

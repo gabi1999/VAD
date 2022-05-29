@@ -1,5 +1,5 @@
-var file_by_data = "http://localhost:63342/Projecto/Website/JSON/price_by_data.csv";
-var file_by_season = "http://localhost:63342/Projecto/Website/JSON/price_by_season.csv";
+var file_by_data = "https://student.dei.uc.pt/~gabriel/JSON/price_by_data.csv";
+var file_by_season = "https://student.dei.uc.pt/~gabriel/JSON/price_by_season.csv";
 
 
 
